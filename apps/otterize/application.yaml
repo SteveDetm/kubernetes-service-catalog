@@ -8,6 +8,7 @@ spec:
   sources:
     - chart: otterize-kubernetes
       repoURL: https://helm.otterize.com
+      targetRevision: 5.0.51
       helm:
         releaseName: otterize
         valueFiles:

@@ -4,7 +4,7 @@ crds:
 
 admissionController:
   serviceMonitor:
-    enabled: true
+    enabled: false
   metering:
     disabled: false
 
