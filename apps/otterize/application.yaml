@@ -12,7 +12,7 @@ spec:
         releaseName: otterize
         valueFiles:
           - $values/apps/otterize/values.yaml
-    - repoURL: https://github.com:SteveDetm/kubernetes-service-catalog.git
+    - repoURL: https://github.com/SteveDetm/kubernetes-service-catalog.git
       ref: values
   destination:
     server: "https://kubernetes.default.svc"
