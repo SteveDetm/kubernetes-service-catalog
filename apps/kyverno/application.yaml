@@ -15,6 +15,8 @@ spec:
         releaseName: kyverno
         valueFiles:
           - $values/apps/kyverno/values.yaml
+    - repoURL: https://github.com:SteveDetm/kubernetes-service-catalog.git
+      ref: values
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: kyverno
