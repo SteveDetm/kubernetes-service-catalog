@@ -1,0 +1,14 @@
+crds:
+  migration:
+    enabled: false
+
+admissionController:
+  serviceMonitor:
+    enabled: true
+  metering:
+    disabled: false
+
+grafana: # you need grafana-crd, so we use cm in a separate step
+  enabled: false
+  grafanaDashboard:
+    create: false
