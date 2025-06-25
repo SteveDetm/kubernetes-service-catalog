@@ -1,20 +1,20 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: restart-job
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/SteveDetm/Restart-Pod-Job.git
-    targetRevision: HEAD
-    path: manifests
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: restart-job
-  syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
-    syncOptions:
-      - CreateNamespace=true # Automatically creates namespace if it doesn't exist
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: restart-job
+#   namespace: argocd
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://github.com/SteveDetm/Restart-Pod-Job.git
+#     targetRevision: HEAD
+#     path: manifests
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: restart-job
+#   syncPolicy:
+#     automated:
+#       selfHeal: true
+#       prune: true
+#     syncOptions:
+#       - CreateNamespace=true # Automatically creates namespace if it doesn't exist
